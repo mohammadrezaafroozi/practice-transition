@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            color: rgb(255, 0, 0);
+            background-color: orange;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            transition-property: width, height, background-color, font-size, color;
+            transition-duration: 1.5s, 2s, 1s, 0s, 4s;
+            transition-delay: 0s, 1.5s, 3.5s, 4.5, 4.5s;
+            transition-timing-function: linear;
+
+            &:hover {
+                width: 600px;
+                height: 400px;
+                background-color: yellow;
+                color: green;
+                font-size: 60px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">parsa</div>
+</body>
+
+</html>
